@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyLayout.master.cs" Inherits="WebApplication1.MyLayout" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow-x:hidden;">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="Content/MasterPage.css" rel="stylesheet" />
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div class="container-fluid" style="padding-left:0px;padding-right:0px">
+            <div class="row">
+                <div class="col-12">
+                     <nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; z-index: 1;width:100%;background-color:#4c4a4a">
+                <a class="navbar-brand" href="#">
+                    <img src="Content/logo1.jpg" style="height:50px;width:100px;border-radius: 50%;"/></a>
+                         <div class="col-6" style="display:flex;align-items:self-end;justify-content:end;font-size:xx-large;">
+                    <ul class="nav navbar-nav" style="color:#35caf5;justify-content: end;">
+                        <asp:Label ID="LabelHeader" runat="server"></asp:Label>
+                     </ul>
+                         </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+              <div class=" collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">       
+                    <div class="col-6 " style="flex: 2 0 33.333333%;max-width: 80.333333%;">
+                             <ul class="navbar-nav ml-auto" style="justify-content: end;">
+                                
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="/Default" style="color:#35caf5">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="/MyLogin"  style="color:#35caf5">Login</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="/Contact"  style="color:#35caf5">Contact Us</a>
+                        </li>
+                                 <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-circle"  style="color:#35caf5"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#4c4a4a">
+                                <a class="dropdown-item" href="/Default"  style="color:#35caf5">Logout</a>
+                                
+                            </div>
+                               </li>
+                             </ul>
+                      </div>            
+                </div>
+            </nav>
+</div>
+</div>
+</div>
+       <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="container-fluid" style="padding-left:0px;padding-right:0px">
+                <div class="row">
+            
+            <div class="col-12">
+                <div class="navbar navbar-expand-lg justify-content-center" style="color:#35caf5;margin-bottom:0px;background-color:#4c4a4a;">
+               
+                   <asp:Label ID="LabelFooter" runat="server"></asp:Label>
+                   <asp:Label ID="LabelCounter" runat="server" Text="Counter" ></asp:Label>
+                   </div>
+                </div>
+                    </div>
+                </div>
+        </footer>
+    </form>
+   <!-- <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

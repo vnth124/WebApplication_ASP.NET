@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<MySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultPageText1>Hello GoodMorning</DefaultPageText1>
+  <DefaultPageText2>Hello GoodAfternoon</DefaultPageText2>
+  <DefaultPageHeaderText>KTS InfoTech</DefaultPageHeaderText>
+  <DefaultPageFooterText>Copyright © KTS Infotech</DefaultPageFooterText>
+</MySettings>
